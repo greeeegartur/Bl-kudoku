@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes clearEffect {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(1.8);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+.clear-vfx {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url("/clear.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  animation: clearEffect 0.6s ease-out forwards;
+  z-index: 20;
+}
