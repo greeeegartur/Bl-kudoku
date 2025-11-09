@@ -1,22 +1,37 @@
 import React, { useState, useEffect } from "react";
 import plopSfx from "/public/plop.mp3";
 import pauhSfx from "/public/pauh.mp3";
+import pilt1 from "public/1.png";
+import pilt2 from "public/2.png";
+import pilt3 from "public/3.png";
+import pilt4 from "public/4.png";
+import pilt5 from "public/5.png";
+import pilt6 from "public/6.png";
+import pilt7 from "public/7.png";
+import pilt8 from "public/8.png";
+import pilt9 from "public/9.png";
+import pilt10 from "public/10.png";
+import pilt11 from "public/11.png";
+import pilt12 from "public/12.png";
+import pilt13 from "public/13.png";
+import pilt14 from "public/14.png";
 const VFX_IMAGES = [
-  "public/1.png",
-  "public/2.png",
-  "public/3.png",
-  "public/4.png",
-  "public/5.png",
-  "public/6.png",
-  "public/7.png",
-  "public/8.png",
-  "public/9.png",
-  "public/10.png",
-  "public/11.png",
-  "public/12.png",
-  "public/13.png",
-  "public/14.png"
+  pilt1,
+  pilt2,
+  pilt3,
+  pilt4,
+  pilt5,
+  pilt6,
+  pilt7,
+  pilt8,
+  pilt9,
+  pilt10,
+  pilt11,
+  pilt12,
+  pilt13,
+  pilt14
 ];
+
 
 
 const GRID_SIZE = 9;
@@ -406,7 +421,7 @@ const isCellInHoverPreview = (r: number, c: number): boolean => {
       {/* Clear visual effect overlay */}
         <img
         id="clear-vfx"
-        src="public/1.png"
+        src= {pilt1}
         alt="tubli!"
         className="pointer-events-none fixed inset-0 m-auto opacity-0 scale-0 transition-all duration-500 ease-out w-40 h-40 opacity-90"
         />
