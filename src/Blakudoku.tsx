@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from "react";
 import plopSfx from "/public/plop.mp3";
 import pauhSfx from "/public/pauh.mp3";
-import pilt1 from "public/1.png";
-import pilt2 from "public/2.png";
-import pilt3 from "public/3.png";
-import pilt4 from "public/4.png";
-import pilt5 from "public/5.png";
-import pilt6 from "public/6.png";
-import pilt7 from "public/7.png";
-import pilt8 from "public/8.png";
-import pilt9 from "public/9.png";
-import pilt10 from "public/10.png";
-import pilt11 from "public/11.png";
-import pilt12 from "public/12.png";
-import pilt13 from "public/13.png";
-import pilt14 from "public/14.png";
+import pilt1 from "/public/1.png";
+import pilt2 from "/public/2.png";
+import pilt3 from "/public/3.png";
+import pilt4 from "/public/4.png";
+import pilt5 from "/public/5.png";
+import pilt6 from "/public/6.png";
+import pilt7 from "/public/7.png";
+import pilt8 from "/public/8.png";
+import pilt9 from "/public/9.png";
+import pilt10 from "/public/10.png";
+import pilt11 from "/public/11.png";
+import pilt12 from "/public/12.png";
+import pilt13 from "/public/13.png";
+import pilt14 from "/public/14.png";
+import logo from "/public/logo.png";
 const VFX_IMAGES = [
   pilt1,
   pilt2,
@@ -316,7 +317,7 @@ const isCellInHoverPreview = (r: number, c: number): boolean => {
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-3">
             <img 
-                src="public/logo.png"          // path to your image
+                src= { logo }          // path to your image
                 alt="Bläkudoku logo" 
                 className="w-26 h-26" 
             />
